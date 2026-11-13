@@ -18,9 +18,9 @@ export default {
         },
       },
       fontFamily: {
-        sans: ['Aileron', 'Inter', 'system-ui', '-apple-system', 'sans-serif'],
-        display: ['Archivo', 'Aileron', 'Impact', 'sans-serif'],
-        serif: ['"Bodoni Moda"', 'Georgia', 'serif'],
+        sans: ['Aileron', 'system-ui', '-apple-system', 'sans-serif'],
+        display: ['Aileron', 'system-ui', '-apple-system', 'sans-serif'],
+        serif: ['Aileron', 'system-ui', '-apple-system', 'sans-serif'],
       },
       boxShadow: {
         soft: '0 10px 40px -10px rgba(22, 34, 63, 0.08)',

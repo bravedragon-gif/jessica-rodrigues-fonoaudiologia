@@ -182,17 +182,14 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenModal }) => {
             </div>
 
             <nav className="flex flex-col divide-y divide-brand-navy/10">
-              {navLinks.map((item, idx) => (
+              {navLinks.map((item) => (
                 <a
                   key={item.href}
                   href={item.href}
                   onClick={() => setMobileMenuOpen(false)}
                   className="py-3 flex items-center justify-between text-xs font-extrabold uppercase tracking-[0.14em] text-brand-navy hover:text-brand-wine transition-colors"
                 >
-                  <span>
-                    <small className="text-brand-wine mr-2">0{idx + 1}</small>
-                    {item.label}
-                  </span>
+                  <span>{item.label}</span>
                   <span>↗</span>
                 </a>
               ))}

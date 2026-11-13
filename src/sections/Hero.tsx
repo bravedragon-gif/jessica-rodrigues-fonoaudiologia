@@ -20,9 +20,9 @@ interface HeroProps {
 const WALL_ITEMS = [
   {
     type: 'image' as const,
-    src: '/brand/comunicar-bem.png',
-    label: 'Comunicar bem é viver bem',
-    bg: '#FAF1F1',
+    src: '/brand/jessica-card-1.jpg',
+    label: 'Fga. Me. Jéssica Alves Rodrigues',
+    bg: '#16223F',
   },
   {
     type: 'plate' as const,
@@ -34,9 +34,9 @@ const WALL_ITEMS = [
   },
   {
     type: 'image' as const,
-    src: '/brand/ass-principal-azul.png',
-    label: 'Identidade Oficial Azul',
-    bg: '#16223F',
+    src: '/brand/jessica-card-4.jpg',
+    label: 'Fonoaudiologia Baseada em Evidências',
+    bg: '#58203A',
   },
   {
     type: 'plate' as const,
@@ -48,9 +48,9 @@ const WALL_ITEMS = [
   },
   {
     type: 'image' as const,
-    src: '/brand/ass-principal-rosa.png',
-    label: 'Identidade Oficial Rosa',
-    bg: '#FAF1F1',
+    src: '/brand/jessica-card-3.jpg',
+    label: 'Atualizações em Fonoaudiologia — Prática Clínica e Científica',
+    bg: '#74465B',
   },
   {
     type: 'plate' as const,
@@ -62,9 +62,9 @@ const WALL_ITEMS = [
   },
   {
     type: 'image' as const,
-    src: '/brand/ass-principal-vinho.png',
-    label: 'Identidade Oficial Vinho',
-    bg: '#58203A',
+    src: '/brand/jessica-card-2.jpg',
+    label: 'Atendimento Clínico e Planejamento Terapêutico',
+    bg: '#16223F',
   },
   {
     type: 'plate' as const,
@@ -76,9 +76,9 @@ const WALL_ITEMS = [
   },
   {
     type: 'image' as const,
-    src: '/brand/icone-fundo.png',
-    label: 'Símbolo Institucional',
-    bg: '#16223F',
+    src: '/brand/jessica-card-4.jpg',
+    label: 'Fga. Me. Jéssica Alves Rodrigues — Prática Baseada em Evidências',
+    bg: '#58203A',
   },
   {
     type: 'plate' as const,
@@ -114,23 +114,23 @@ export const Hero: React.FC<HeroProps> = ({ onOpenModal }) => {
   const getCardVisual = (idx: number) => {
     const visuals = [
       {
-        bg: 'linear-gradient(160deg, #16223F 0%, #243D5B 55%, #58203A 100%)',
+        bg: '#16223F',
         img: '/brand/icone-fundo.png',
         accent: '#EBC4BF',
       },
       {
-        bg: 'linear-gradient(160deg, #58203A 0%, #74465B 60%, #16223F 100%)',
-        img: '/brand/comunicar-bem.png',
+        bg: '#2A1824',
+        img: '/brand/jessica-card-1.jpg',
         accent: '#FAF1F1',
       },
       {
-        bg: 'linear-gradient(160deg, #243D5B 0%, #16223F 60%, #74465B 100%)',
-        img: '/brand/ass-principal-roxo.png',
+        bg: '#16223F',
+        img: '/brand/jessica-card-2.jpg',
         accent: '#EBC4BF',
       },
       {
-        bg: 'linear-gradient(160deg, #16223F 0%, #58203A 65%, #243D5B 100%)',
-        img: '/brand/ass-principal-vinho.png',
+        bg: '#3B192B',
+        img: '/brand/jessica-card-3.jpg',
         accent: '#EBC4BF',
       },
     ];
@@ -273,12 +273,10 @@ export const Hero: React.FC<HeroProps> = ({ onOpenModal }) => {
             <p className="text-xs sm:text-sm uppercase tracking-[0.2em] text-brand-rose/90 font-bold">
               {PROFESSIONAL_INFO.name}
             </p>
-            <h1 className="archivo font-black uppercase tracking-[-0.07em] leading-[0.86] text-[clamp(44px,8.6vw,138px)] text-white">
+            <h1 className="archivo font-extrabold uppercase tracking-[-0.025em] leading-[1.02] text-[clamp(38px,6.5vw,108px)] text-white">
               JÉSSICA ALVES
               <br />
-              <span className="serif-accent font-normal text-brand-rose lowercase tracking-[-0.04em]">
-                fonoaudiologia.
-              </span>
+              <span className="text-brand-rose">FONOAUDIOLOGIA.</span>
             </h1>
           </div>
 
@@ -356,7 +354,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenModal }) => {
             >
               <span>FALA &amp; ARTICULAÇÃO</span>
               <i />
-              <span>TRANSTORNOS DE APRENDIZAGEM</span>
+              <span>DIFICULDADE DE APRENDIZAGEM</span>
               <i />
               <span>DISLEXIA</span>
               <i />
@@ -386,12 +384,12 @@ export const Hero: React.FC<HeroProps> = ({ onOpenModal }) => {
           </span>
         </div>
 
-        <p className="rv mt-12 archivo font-bold tracking-[-0.055em] leading-[1.06] text-[clamp(30px,4.8vw,78px)] text-brand-navy max-w-6xl">
+        <p className="rv mt-12 font-extrabold tracking-[-0.02em] leading-[1.2] text-[clamp(26px,3.8vw,56px)] text-brand-navy max-w-5xl">
           Ciência e sensibilidade clínica para transformar a{' '}
-          <em className="serif-accent text-brand-wine">comunicação,</em> a{' '}
-          <em className="serif-accent text-brand-wine">aprendizagem</em> e o
+          <span className="text-brand-wine">comunicação,</span> a{' '}
+          <span className="text-brand-wine">aprendizagem</span> e o
           processamento{' '}
-          <em className="serif-accent text-brand-wine">auditivo.</em>
+          <span className="text-brand-wine">auditivo.</span>
         </p>
 
         {/* Full Clinical Summary + Location & Online Modalities */}
@@ -401,9 +399,6 @@ export const Hero: React.FC<HeroProps> = ({ onOpenModal }) => {
               <div className="flex flex-wrap items-center justify-between gap-2 border-b border-brand-navy/10 pb-4">
                 <span className="eyebrow text-brand-wine">
                   Síntese Clínica &amp; Acadêmica
-                </span>
-                <span className="ds-tag text-brand-navy">
-                  {PROFESSIONAL_INFO.crfa} • UnB
                 </span>
               </div>
 
@@ -513,11 +508,11 @@ export const Hero: React.FC<HeroProps> = ({ onOpenModal }) => {
                     src={visual.img}
                     alt={area.title}
                     loading="lazy"
-                    className="pointer-events-none absolute inset-0 w-full h-[112%] object-cover opacity-20 mix-blend-luminosity transition-transform duration-700 group-hover:scale-105"
+                    className="pointer-events-none absolute inset-0 w-full h-[112%] object-cover object-top transition-transform duration-700 group-hover:scale-105"
                   />
                   <div
                     aria-hidden="true"
-                    className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/25 via-transparent to-black/85"
+                    className="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/80"
                   />
 
                   {/* Top Badge & Icon */}
@@ -559,13 +554,6 @@ export const Hero: React.FC<HeroProps> = ({ onOpenModal }) => {
         className="py-14 bg-brand-cream ds-border-b overflow-hidden"
         aria-label="Mosaico visual institucional"
       >
-        <div className="ds-pad flex items-center justify-between gap-4 mb-8">
-          <span className="eyebrow text-brand-wine">
-            Identidade &amp; Prática Clínica / Estudo Visual
-          </span>
-          <span className="eyebrow text-brand-navy/70">[ CRFa 5-13805 — UnB ]</span>
-        </div>
-
         <div ref={wallRef} className="ds-wall">
           <div className="ds-plane">
             {[0, 1, 2, 3].map((rowIndex) => (
@@ -590,7 +578,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenModal }) => {
                           src={item.src}
                           alt={item.label}
                           loading="lazy"
-                          className="w-full h-full object-cover"
+                          className="w-full h-full object-cover object-top"
                         />
                       ) : (
                         <div

@@ -47,12 +47,12 @@ export const About: React.FC = () => {
         <div className="lg:col-span-5 space-y-6">
           <div className="rv relative overflow-hidden border border-brand-navy/15 bg-brand-navy text-white">
             {/* Image Frame with Parallax Target */}
-            <div className="pic relative overflow-hidden bg-white aspect-[4/4.3]">
+            <div className="pic relative overflow-hidden bg-brand-wine aspect-[4/4.6]">
               <img
-                src="/brand/comunicar-bem.png"
-                alt="Comunicar bem é viver bem - Fga. Me. Jéssica Alves Rodrigues"
+                src="/brand/jessica-card-4.jpg"
+                alt="Fga. Me. Jéssica Alves Rodrigues — Fonoaudióloga CRFa 5-13805"
                 loading="lazy"
-                className="w-full h-[112%] object-cover will-change-transform"
+                className="w-full h-[112%] object-cover object-top will-change-transform"
               />
             </div>
 
@@ -109,7 +109,6 @@ export const About: React.FC = () => {
               <span className="eyebrow text-brand-wine">
                 02 / Sobre Mim — Trajetória Clínica &amp; Acadêmica
               </span>
-              <span className="eyebrow text-brand-navy/60">UnB • CRFa 5-13805</span>
             </div>
 
             <h2 className="ds-section-h2 text-brand-navy pt-2">

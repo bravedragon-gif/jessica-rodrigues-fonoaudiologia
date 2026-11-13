@@ -132,12 +132,10 @@ export const ContactForm: React.FC<ContactFormProps> = ({
             <span className="eyebrow text-brand-rose">
               06 / Como Entrar em Contato — Agendamento &amp; Orientação
             </span>
-            <h2 className="archivo font-black uppercase tracking-[-0.075em] leading-[0.86] text-[clamp(48px,9vw,148px)] text-white">
+            <h2 className="archivo font-extrabold uppercase tracking-[-0.025em] leading-[1.02] text-[clamp(38px,6.5vw,108px)] text-white">
               COMUNICAR BEM
               <br />
-              <em className="serif-accent font-normal text-brand-rose lowercase tracking-[-0.04em]">
-                é viver bem.
-              </em>
+              <span className="text-brand-rose">É VIVER BEM.</span>
             </h2>
           </div>
 
