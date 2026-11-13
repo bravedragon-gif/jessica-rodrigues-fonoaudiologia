@@ -196,7 +196,7 @@ export const Services: React.FC<ServicesProps> = ({ onOpenModal }) => {
                   <MapPin className="w-3.5 h-3.5" />
                   <span>01 / Modalidade Presencial • Asa Norte</span>
                 </div>
-                <h3 className="archivo font-black uppercase tracking-[-0.06em] leading-[0.92] text-[clamp(32px,5vw,72px)] text-white">
+                <h3 className="archivo font-extrabold uppercase tracking-[-0.025em] leading-[1.02] text-[clamp(28px,4vw,56px)] text-white">
                   PRESENCIAL — ASA NORTE
                 </h3>
                 <p className="text-sm sm:text-base text-brand-rose/95 max-w-2xl">
@@ -300,7 +300,7 @@ export const Services: React.FC<ServicesProps> = ({ onOpenModal }) => {
                     {PROFESSIONAL_INFO.cffaResolution})
                   </span>
                 </div>
-                <h3 className="archivo font-black uppercase tracking-[-0.06em] leading-[0.92] text-[clamp(32px,5vw,72px)] text-white">
+                <h3 className="archivo font-extrabold uppercase tracking-[-0.025em] leading-[1.02] text-[clamp(28px,4vw,56px)] text-white">
                   TELEFONOAUDIOLOGIA
                 </h3>
                 <p className="text-sm sm:text-base text-white/85 max-w-2xl leading-relaxed">

@@ -41,7 +41,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenModal }) => {
                 href="#inicio"
                 className="hover:text-brand-rose transition-colors"
               >
-                01 — Início
+                Início
               </a>
             </li>
             <li>
@@ -49,7 +49,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenModal }) => {
                 href="#sobre-mim"
                 className="hover:text-brand-rose transition-colors"
               >
-                02 — Sobre Mim
+                Sobre Mim
               </a>
             </li>
             <li>
@@ -57,7 +57,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenModal }) => {
                 href="#atendimentos"
                 className="hover:text-brand-rose transition-colors"
               >
-                03 — Atendimentos Presencial e On-line
+                Atendimentos Presencial e On-line
               </a>
             </li>
             <li>
@@ -65,7 +65,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenModal }) => {
                 href="#artigos"
                 className="hover:text-brand-rose transition-colors"
               >
-                04 — Artigos e Notícias
+                Artigos e Notícias
               </a>
             </li>
             <li className="pt-1">
